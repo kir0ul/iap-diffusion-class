@@ -28,14 +28,15 @@ html {
 
 body {
   margin: 0;
-  color: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: #303030;
+  color: #ddd;
   overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: bold;
+  color: #eee;
   /*text-decoration: underline;*/
   line-height: 1.25;
   font-size: 1rem;
@@ -120,8 +121,8 @@ pre code {
 }
 
 a {
-  color: #54008c;
-  text-decoration: underline;
+  color: #66D9EF;
+  text-decoration: none;
 }
 
 a:hover {
@@ -239,6 +240,11 @@ hr {
   text-decoration: none;
 }
 
+#nav-bg, a#logo, #top-nav a {
+  background-color: #FFFFFF;
+  color: #202020;
+}
+
 .navbar-ul {
   display: inline-block;
   list-style-type: none;
@@ -339,43 +345,6 @@ input[type=checkbox]:checked ~ .menu-label:after {
 
 }
 
-@media (prefers-color-scheme: dark) {
-
-    body {
-        background-color: #303030;
-        color: #ddd
-    }
-
-    a {
-      color: #66D9EF;
-      /*color: #A6E22E;*/
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #000;
-      background-color: #66D9EF;
-      text-decoration: none;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        color: #eee;
-      }
-
-    #nav-bg, a#logo, #top-nav a {
-      background-color: #FFFFFF;
-      color: #202020;
-    }
-
-    a:hover > code  {
-        background-color: #66D9EF;
-    }
-
-    .accent {
-        color: #F92672;
-    }
-}
-
 /* General container styling */
 .instructors {
   display: flex; /* Align columns side by side */
@@ -425,19 +394,3 @@ input[type=checkbox]:checked ~ .menu-label:after {
   color: #ccc; /* Softer color for the title */
   margin-top: 0;
 }
-/* @media print { */
-/*   #nav-bg, #logo, #top-nav { display: none; } */
-/*   h1.title ~ p.center.gap.accent { display: none; } */
-/*   .youtube-wrapper { display: none; } */
-/*   html { font-size: 1em; font-family: sans-serif; } */
-/*   body { background: none; } */
-/*   #content { max-width: none; } */
-/*   h1.title { text-align: center; } */
-/*   h1, h2, h3, h4, h5, h6 { break-after: avoid-page; page-break-after: avoid; } */
-/*   #content hr:last-of-type { display: none; } */
-/*   #content pre { break-inside: avoid-page; page-break-inside: avoid; white-space: pre-wrap; } */
-/*   #content div.small:last-of-type { display: none; } */
-/*   a[href^="https://"]::after, a[href^="http://"]::after { */
-/*     content: "("attr(href)")"; font-family: monospace; margin: 0 .25em; */
-/*   } */
-/* } */
