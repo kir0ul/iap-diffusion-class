@@ -230,8 +230,9 @@ hr {
   display: flex;
   justify-content: space-between; /* Push items to the sides */
   align-items: center; /* Vertically center items */
-  max-width: 40rem;
-  margin: auto;
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
   text-align: center;
 }
 
