@@ -551,3 +551,10 @@ input[type=checkbox]:checked ~ .menu-label:after {
   margin-right: 8px;
 }
 
+.disabled-link {
+  pointer-events: none;  /* Prevents clicking */
+  color: grey;           /* Grey out the text */
+  text-decoration: none; /* Remove underline */
+  opacity: 0.6;          /* Reduce visibility */
+}
+
